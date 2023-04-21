@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="public/style.css">
+        <title>Support</title>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td class="td-buttons">
+                        <button class="red-button" onclick="getCargoTypes()">Види вантажу</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="white-button" onclick="getBackwardDeliveryCargoTypes()">Види зворотньої доставки вантажу</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="red-button" onclick="getPalletsList()">Види палет</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="white-button" onclick="getTypesOfPayersForRedelivery()">Види платників зворотної доставки</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="red-button" onclick="getCargoDescriptionList()">Описи вантажу</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-buttons">
+                        <button class="white-button" onclick="getServiceTypes()">Технології доставки</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="red-button" onclick="getTiresWheelsList()">Види шин та дисків</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="white-button" onclick="getPackList()">Види упаковки</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="red-button" onclick="getOwnershipFormsList()">Форми власності</button>
+                    </td>
+                    <td class="td-buttons">
+                        <button class="white-button" onclick="clearTable()">Очистити поле</button>
+                    </td>
+                </tr>
+            </table>
+        </div><br>
+        <div id="form-container"></div>
+        <div id="table-container"></div>
+        <script src="APINP.js"></script>
+    </body>
+</html>
